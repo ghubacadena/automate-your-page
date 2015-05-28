@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphic - Bullet Type</title>
+    <style>
+      body {
+        max-width: 1330px;
+        max-height: 490px;
+        font: 100% Tahoma;
+        background-color: #000000
+        }
+      div {
+        height : 10px;
+        width : 10px;
+        border-radius: 25px;
+        padding: 0px;
+        margin: 0px;
+
+        }
+        ul {
+          /*position: relative;*/
+          font-family: Tahoma;
+          overflow: auto;
+          padding-left: 360px;
+          padding-right: 300px;
+          margin: 1px;
+        }
+        li {
+            float: left;
+            text-align: center;
+            vertical-align: center;
+            width: 150px;
+            height: 25px;
+            background-color: #0000FF;
+            color: white;
+            padding-top: 2px;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-radius: 5px;
+            margin: 1px;
+            list-style-type: none;  
+        }
+      .punto {
+        background-color: #FF9900; /*#00FFCC magenta #CC00CC morado #FF9900 naranja*/
+        }
+    </style>
+
+    <script>
+      function funGetData(n) {
+        var temp
+        var stpe
+        var Tpos
+        var Spos
+
+        Tpos = "Temp"+ n.toString();
+        Spos = "Step"+ n.toString();
+
+        temp = document.getElementById(Tpos).innerHTML;
+        stpe = document.getElementById(Spos).innerHTML;
+
+
+         document.getElementById("datT").innerHTML = temp;
+         document.getElementById("datS").innerHTML = stpe;
+        }
+    </script>
+</head>
+
+<body>
+
+            <ul class="menu">
+		            <li>Temperature:</li>
+                <li id="datT"></li>
+		            <li>Step:</li>
+                <li id="datS"></li>           
+            </ul>
+
+            <hr>
+<div class="punto" style="position: relative;top: 380.0px;left: 50px" onclick="funGetData(1)">
+	<p id="Temp1" style="display:none">20.0</p>
+	<p id="Step1" style="display:none">1</p>
+</div>
+<div class="punto" style="position: relative;top: 370.0px;left: 60px" onclick="funGetData(2)">
+	<p id="Temp2" style="display:none">20.0</p>
+	<p id="Step2" style="display:none">2</p>
+</div>
+<div class="punto" style="position: relative;top: 360.0px;left: 70px" onclick="funGetData(3)">
+	<p id="Temp3" style="display:none">20.0</p>
+	<p id="Step3" style="display:none">3</p>
+</div>
+<div class="punto" style="position: relative;top: 335.0px;left: 80px" onclick="funGetData(4)">
+	<p id="Temp4" style="display:none">35.0</p>
+	<p id="Step4" style="display:none">4</p>
+</div>
+<div class="punto" style="position: relative;top: 311.0px;left: 90px" onclick="funGetData(5)">
+	<p id="Temp5" style="display:none">48.75</p>
+	<p id="Step5" style="display:none">5</p>
+</div>
+<div class="punto" style="position: relative;top: 288.0px;left: 100px" onclick="funGetData(6)">
+	<p id="Temp6" style="display:none">61.3541666667</p>
+	<p id="Step6" style="display:none">6</p>
+</div>
+<div class="punto" style="position: relative;top: 267.0px;left: 110px" onclick="funGetData(7)">
+	<p id="Temp7" style="display:none">72.9079861111</p>
+	<p id="Step7" style="display:none">7</p>
+</div>
+<div class="punto" style="position: relative;top: 246.0px;left: 120px" onclick="funGetData(8)">
+	<p id="Temp8" style="display:none">83.4989872685</p>
+	<p id="Step8" style="display:none">8</p>
+</div>
+<div class="punto" style="position: relative;top: 226.0px;left: 130px" onclick="funGetData(9)">
+	<p id="Temp9" style="display:none">93.2074049961</p>
+	<p id="Step9" style="display:none">9</p>
+</div>
+<div class="punto" style="position: relative;top: 207.0px;left: 140px" onclick="funGetData(10)">
+	<p id="Temp10" style="display:none">102.106787913</p>
+	<p id="Step10" style="display:none">10</p>
+</div>
+<div class="punto" style="position: relative;top: 189.0px;left: 150px" onclick="funGetData(11)">
+	<p id="Temp11" style="display:none">110.264555587</p>
+	<p id="Step11" style="display:none">11</p>
+</div>
+<div class="punto" style="position: relative;top: 172.0px;left: 160px" onclick="funGetData(12)">
+	<p id="Temp12" style="display:none">117.742509288</p>
+	<p id="Step12" style="display:none">12</p>
+</div>
+<div class="punto" style="position: relative;top: 155.0px;left: 170px" onclick="funGetData(13)">
+	<p id="Temp13" style="display:none">124.597300181</p>
+	<p id="Step13" style="display:none">13</p>
+</div>
+<div class="punto" style="position: relative;top: 139.0px;left: 180px" onclick="funGetData(14)">
+	<p id="Temp14" style="display:none">130.880858499</p>
+	<p id="Step14" style="display:none">14</p>
+</div>
+<div class="punto" style="position: relative;top: 123.0px;left: 190px" onclick="funGetData(15)">
+	<p id="Temp15" style="display:none">136.640786957</p>
+	<p id="Step15" style="display:none">15</p>
+</div>
+<div class="punto" style="position: relative;top: 108.0px;left: 200px" onclick="funGetData(16)">
+	<p id="Temp16" style="display:none">141.920721378</p>
+	<p id="Step16" style="display:none">16</p>
+</div>
+<div class="punto" style="position: relative;top: 93.0px;left: 210px" onclick="funGetData(17)">
+	<p id="Temp17" style="display:none">146.760661263</p>
+	<p id="Step17" style="display:none">17</p>
+</div>
+<div class="punto" style="position: relative;top: 78.0px;left: 220px" onclick="funGetData(18)">
+	<p id="Temp18" style="display:none">151.197272824</p>
+	<p id="Step18" style="display:none">18</p>
+</div>
+<div class="punto" style="position: relative;top: 64.0px;left: 230px" onclick="funGetData(19)">
+	<p id="Temp19" style="display:none">155.264166756</p>
+	<p id="Step19" style="display:none">19</p>
+</div>
+<div class="punto" style="position: relative;top: 51.0px;left: 240px" onclick="funGetData(20)">
+	<p id="Temp20" style="display:none">158.992152859</p>
+	<p id="Step20" style="display:none">20</p>
+</div>
+<div class="punto" style="position: relative;top: 37.0px;left: 250px" onclick="funGetData(21)">
+	<p id="Temp21" style="display:none">162.409473454</p>
+	<p id="Step21" style="display:none">21</p>
+</div>
+<div class="punto" style="position: relative;top: 24.0px;left: 260px" onclick="funGetData(22)">
+	<p id="Temp22" style="display:none">165.542017333</p>
+	<p id="Step22" style="display:none">22</p>
+</div>
+<div class="punto" style="position: relative;top: 11.0px;left: 270px" onclick="funGetData(23)">
+	<p id="Temp23" style="display:none">168.413515889</p>
+	<p id="Step23" style="display:none">23</p>
+</div>
+<div class="punto" style="position: relative;top: -2.0px;left: 280px" onclick="funGetData(24)">
+	<p id="Temp24" style="display:none">171.045722898</p>
+	<p id="Step24" style="display:none">24</p>
+</div>
+<div class="punto" style="position: relative;top: -14.0px;left: 290px" onclick="funGetData(25)">
+	<p id="Temp25" style="display:none">173.458579323</p>
+	<p id="Step25" style="display:none">25</p>
+</div>
+<div class="punto" style="position: relative;top: -26.0px;left: 300px" onclick="funGetData(26)">
+	<p id="Temp26" style="display:none">175.67036438</p>
+	<p id="Step26" style="display:none">26</p>
+</div>
+<div class="punto" style="position: relative;top: -38.0px;left: 310px" onclick="funGetData(27)">
+	<p id="Temp27" style="display:none">177.697834015</p>
+	<p id="Step27" style="display:none">27</p>
+</div>
+<div class="punto" style="position: relative;top: -50.0px;left: 320px" onclick="funGetData(28)">
+	<p id="Temp28" style="display:none">179.556347847</p>
+	<p id="Step28" style="display:none">28</p>
+</div>
+<div class="punto" style="position: relative;top: -62.0px;left: 330px" onclick="funGetData(29)">
+	<p id="Temp29" style="display:none">181.259985526</p>
+	<p id="Step29" style="display:none">29</p>
+</div>
+<div class="punto" style="position: relative;top: -73.0px;left: 340px" onclick="funGetData(30)">
+	<p id="Temp30" style="display:none">182.821653399</p>
+	<p id="Step30" style="display:none">30</p>
+</div>
+<div class="punto" style="position: relative;top: -85.0px;left: 350px" onclick="funGetData(31)">
+	<p id="Temp31" style="display:none">184.253182282</p>
+	<p id="Step31" style="display:none">31</p>
+</div>
+<div class="punto" style="position: relative;top: -96.0px;left: 360px" onclick="funGetData(32)">
+	<p id="Temp32" style="display:none">185.565417092</p>
+	<p id="Step32" style="display:none">32</p>
+</div>
+<div class="punto" style="position: relative;top: -107.0px;left: 370px" onclick="funGetData(33)">
+	<p id="Temp33" style="display:none">186.768299001</p>
+	<p id="Step33" style="display:none">33</p>
+</div>
+<div class="punto" style="position: relative;top: -118.0px;left: 380px" onclick="funGetData(34)">
+	<p id="Temp34" style="display:none">187.870940751</p>
+	<p id="Step34" style="display:none">34</p>
+</div>
+<div class="punto" style="position: relative;top: -129.0px;left: 390px" onclick="funGetData(35)">
+	<p id="Temp35" style="display:none">188.881695688</p>
+	<p id="Step35" style="display:none">35</p>
+</div>
+<div class="punto" style="position: relative;top: -140.0px;left: 400px" onclick="funGetData(36)">
+	<p id="Temp36" style="display:none">189.808221048</p>
+	<p id="Step36" style="display:none">36</p>
+</div>
+<div class="punto" style="position: relative;top: -151.0px;left: 410px" onclick="funGetData(37)">
+	<p id="Temp37" style="display:none">190.65753596</p>
+	<p id="Step37" style="display:none">37</p>
+</div>
+<div class="punto" style="position: relative;top: -162.0px;left: 420px" onclick="funGetData(38)">
+	<p id="Temp38" style="display:none">191.43607463</p>
+	<p id="Step38" style="display:none">38</p>
+</div>
+<div class="punto" style="position: relative;top: -173.0px;left: 430px" onclick="funGetData(39)">
+	<p id="Temp39" style="display:none">192.149735078</p>
+	<p id="Step39" style="display:none">39</p>
+</div>
+<div class="punto" style="position: relative;top: -183.0px;left: 440px" onclick="funGetData(40)">
+	<p id="Temp40" style="display:none">192.803923821</p>
+	<p id="Step40" style="display:none">40</p>
+</div>
+<div class="punto" style="position: relative;top: -194.0px;left: 450px" onclick="funGetData(41)">
+	<p id="Temp41" style="display:none">193.403596836</p>
+	<p id="Step41" style="display:none">41</p>
+</div>
+<div class="punto" style="position: relative;top: -204.0px;left: 460px" onclick="funGetData(42)">
+	<p id="Temp42" style="display:none">193.9532971</p>
+	<p id="Step42" style="display:none">42</p>
+</div>
+<div class="punto" style="position: relative;top: -215.0px;left: 470px" onclick="funGetData(43)">
+	<p id="Temp43" style="display:none">194.457189008</p>
+	<p id="Step43" style="display:none">43</p>
+</div>
+<div class="punto" style="position: relative;top: -225.0px;left: 480px" onclick="funGetData(44)">
+	<p id="Temp44" style="display:none">194.919089924</p>
+	<p id="Step44" style="display:none">44</p>
+</div>
+<div class="punto" style="position: relative;top: -236.0px;left: 490px" onclick="funGetData(45)">
+	<p id="Temp45" style="display:none">195.342499097</p>
+	<p id="Step45" style="display:none">45</p>
+</div>
+<div class="punto" style="position: relative;top: -246.0px;left: 500px" onclick="funGetData(46)">
+	<p id="Temp46" style="display:none">195.730624172</p>
+	<p id="Step46" style="display:none">46</p>
+</div>
+<div class="punto" style="position: relative;top: -257.0px;left: 510px" onclick="funGetData(47)">
+	<p id="Temp47" style="display:none">196.086405491</p>
+	<p id="Step47" style="display:none">47</p>
+</div>
+<div class="punto" style="position: relative;top: -267.0px;left: 520px" onclick="funGetData(48)">
+	<p id="Temp48" style="display:none">196.412538367</p>
+	<p id="Step48" style="display:none">48</p>
+</div>
+<div class="punto" style="position: relative;top: -277.0px;left: 530px" onclick="funGetData(49)">
+	<p id="Temp49" style="display:none">196.711493503</p>
+	<p id="Step49" style="display:none">49</p>
+</div>
+<div class="punto" style="position: relative;top: -287.0px;left: 540px" onclick="funGetData(50)">
+	<p id="Temp50" style="display:none">196.985535711</p>
+	<p id="Step50" style="display:none">50</p>
+</div>
+<div class="punto" style="position: relative;top: -298.0px;left: 550px" onclick="funGetData(51)">
+	<p id="Temp51" style="display:none">197.236741069</p>
+	<p id="Step51" style="display:none">51</p>
+</div>
+<div class="punto" style="position: relative;top: -308.0px;left: 560px" onclick="funGetData(52)">
+	<p id="Temp52" style="display:none">197.467012646</p>
+	<p id="Step52" style="display:none">52</p>
+</div>
+<div class="punto" style="position: relative;top: -318.0px;left: 570px" onclick="funGetData(53)">
+	<p id="Temp53" style="display:none">197.678094926</p>
+	<p id="Step53" style="display:none">53</p>
+</div>
+<div class="punto" style="position: relative;top: -328.0px;left: 580px" onclick="funGetData(54)">
+	<p id="Temp54" style="display:none">197.871587015</p>
+	<p id="Step54" style="display:none">54</p>
+</div>
+<div class="punto" style="position: relative;top: -339.0px;left: 590px" onclick="funGetData(55)">
+	<p id="Temp55" style="display:none">198.048954764</p>
+	<p id="Step55" style="display:none">55</p>
+</div>
+<div class="punto" style="position: relative;top: -349.0px;left: 600px" onclick="funGetData(56)">
+	<p id="Temp56" style="display:none">198.211541867</p>
+	<p id="Step56" style="display:none">56</p>
+</div>
+<div class="punto" style="position: relative;top: -359.0px;left: 610px" onclick="funGetData(57)">
+	<p id="Temp57" style="display:none">198.360580045</p>
+	<p id="Step57" style="display:none">57</p>
+</div>
+<div class="punto" style="position: relative;top: -369.0px;left: 620px" onclick="funGetData(58)">
+	<p id="Temp58" style="display:none">198.497198374</p>
+	<p id="Step58" style="display:none">58</p>
+</div>
+<div class="punto" style="position: relative;top: -379.0px;left: 630px" onclick="funGetData(59)">
+	<p id="Temp59" style="display:none">198.622431843</p>
+	<p id="Step59" style="display:none">59</p>
+</div>
+<div class="punto" style="position: relative;top: -389.0px;left: 640px" onclick="funGetData(60)">
+	<p id="Temp60" style="display:none">198.73722919</p>
+	<p id="Step60" style="display:none">60</p>
+</div>
+<div class="punto" style="position: relative;top: -399.0px;left: 650px" onclick="funGetData(61)">
+	<p id="Temp61" style="display:none">198.84246009</p>
+	<p id="Step61" style="display:none">61</p>
+</div>
+<div class="punto" style="position: relative;top: -409.0px;left: 660px" onclick="funGetData(62)">
+	<p id="Temp62" style="display:none">198.93892175</p>
+	<p id="Step62" style="display:none">62</p>
+</div>
+<div class="punto" style="position: relative;top: -420.0px;left: 670px" onclick="funGetData(63)">
+	<p id="Temp63" style="display:none">199.027344937</p>
+	<p id="Step63" style="display:none">63</p>
+</div>
+<div class="punto" style="position: relative;top: -430.0px;left: 680px" onclick="funGetData(64)">
+	<p id="Temp64" style="display:none">199.108399526</p>
+	<p id="Step64" style="display:none">64</p>
+</div>
+<div class="punto" style="position: relative;top: -440.0px;left: 690px" onclick="funGetData(65)">
+	<p id="Temp65" style="display:none">199.182699565</p>
+	<p id="Step65" style="display:none">65</p>
+</div>
+<div class="punto" style="position: relative;top: -450.0px;left: 700px" onclick="funGetData(66)">
+	<p id="Temp66" style="display:none">199.250807935</p>
+	<p id="Step66" style="display:none">66</p>
+</div>
+<div class="punto" style="position: relative;top: -460.0px;left: 710px" onclick="funGetData(67)">
+	<p id="Temp67" style="display:none">199.313240607</p>
+	<p id="Step67" style="display:none">67</p>
+</div>
+<div class="punto" style="position: relative;top: -470.0px;left: 720px" onclick="funGetData(68)">
+	<p id="Temp68" style="display:none">199.370470556</p>
+	<p id="Step68" style="display:none">68</p>
+</div>
+<div class="punto" style="position: relative;top: -480.0px;left: 730px" onclick="funGetData(69)">
+	<p id="Temp69" style="display:none">199.422931343</p>
+	<p id="Step69" style="display:none">69</p>
+</div>
+<div class="punto" style="position: relative;top: -490.0px;left: 740px" onclick="funGetData(70)">
+	<p id="Temp70" style="display:none">199.471020398</p>
+	<p id="Step70" style="display:none">70</p>
+</div>
+<div class="punto" style="position: relative;top: -500.0px;left: 750px" onclick="funGetData(71)">
+	<p id="Temp71" style="display:none">199.515102032</p>
+	<p id="Step71" style="display:none">71</p>
+</div>
+<div class="punto" style="position: relative;top: -510.0px;left: 760px" onclick="funGetData(72)">
+	<p id="Temp72" style="display:none">199.555510196</p>
+	<p id="Step72" style="display:none">72</p>
+</div>
+<div class="punto" style="position: relative;top: -520.0px;left: 770px" onclick="funGetData(73)">
+	<p id="Temp73" style="display:none">199.592551013</p>
+	<p id="Step73" style="display:none">73</p>
+</div>
+<div class="punto" style="position: relative;top: -530.0px;left: 780px" onclick="funGetData(74)">
+	<p id="Temp74" style="display:none">199.626505095</p>
+	<p id="Step74" style="display:none">74</p>
+</div>
+<div class="punto" style="position: relative;top: -540.0px;left: 790px" onclick="funGetData(75)">
+	<p id="Temp75" style="display:none">199.65762967</p>
+	<p id="Step75" style="display:none">75</p>
+</div>
+<div class="punto" style="position: relative;top: -550.0px;left: 800px" onclick="funGetData(76)">
+	<p id="Temp76" style="display:none">199.686160531</p>
+	<p id="Step76" style="display:none">76</p>
+</div>
+<div class="punto" style="position: relative;top: -560.0px;left: 810px" onclick="funGetData(77)">
+	<p id="Temp77" style="display:none">199.71231382</p>
+	<p id="Step77" style="display:none">77</p>
+</div>
+<div class="punto" style="position: relative;top: -570.0px;left: 820px" onclick="funGetData(78)">
+	<p id="Temp78" style="display:none">199.736287668</p>
+	<p id="Step78" style="display:none">78</p>
+</div>
+<div class="punto" style="position: relative;top: -580.0px;left: 830px" onclick="funGetData(79)">
+	<p id="Temp79" style="display:none">199.758263696</p>
+	<p id="Step79" style="display:none">79</p>
+</div>
+<div class="punto" style="position: relative;top: -590.0px;left: 840px" onclick="funGetData(80)">
+	<p id="Temp80" style="display:none">199.778408388</p>
+	<p id="Step80" style="display:none">80</p>
+</div>
+<div class="punto" style="position: relative;top: -600.0px;left: 850px" onclick="funGetData(81)">
+	<p id="Temp81" style="display:none">199.796874356</p>
+	<p id="Step81" style="display:none">81</p>
+</div>
+<div class="punto" style="position: relative;top: -610.0px;left: 860px" onclick="funGetData(82)">
+	<p id="Temp82" style="display:none">199.813801493</p>
+	<p id="Step82" style="display:none">82</p>
+</div>
+<div class="punto" style="position: relative;top: -620.0px;left: 870px" onclick="funGetData(83)">
+	<p id="Temp83" style="display:none">199.829318035</p>
+	<p id="Step83" style="display:none">83</p>
+</div>
+<div class="punto" style="position: relative;top: -630.0px;left: 880px" onclick="funGetData(84)">
+	<p id="Temp84" style="display:none">199.843541532</p>
+	<p id="Step84" style="display:none">84</p>
+</div>
+<div class="punto" style="position: relative;top: -640.0px;left: 890px" onclick="funGetData(85)">
+	<p id="Temp85" style="display:none">199.856579738</p>
+	<p id="Step85" style="display:none">85</p>
+</div>
+<div class="punto" style="position: relative;top: -650.0px;left: 900px" onclick="funGetData(86)">
+	<p id="Temp86" style="display:none">199.868531426</p>
+	<p id="Step86" style="display:none">86</p>
+</div>
+<div class="punto" style="position: relative;top: -660.0px;left: 910px" onclick="funGetData(87)">
+	<p id="Temp87" style="display:none">199.879487141</p>
+	<p id="Step87" style="display:none">87</p>
+</div>
+<div class="punto" style="position: relative;top: -670.0px;left: 920px" onclick="funGetData(88)">
+	<p id="Temp88" style="display:none">199.889529879</p>
+	<p id="Step88" style="display:none">88</p>
+</div>
+<div class="punto" style="position: relative;top: -680.0px;left: 930px" onclick="funGetData(89)">
+	<p id="Temp89" style="display:none">199.898735722</p>
+	<p id="Step89" style="display:none">89</p>
+</div>
+<div class="punto" style="position: relative;top: -690.0px;left: 940px" onclick="funGetData(90)">
+	<p id="Temp90" style="display:none">199.907174412</p>
+	<p id="Step90" style="display:none">90</p>
+</div>
+<div class="punto" style="position: relative;top: -700.0px;left: 950px" onclick="funGetData(91)">
+	<p id="Temp91" style="display:none">199.914909878</p>
+	<p id="Step91" style="display:none">91</p>
+</div>
+<div class="punto" style="position: relative;top: -710.0px;left: 960px" onclick="funGetData(92)">
+	<p id="Temp92" style="display:none">199.922000721</p>
+	<p id="Step92" style="display:none">92</p>
+</div>
+<div class="punto" style="position: relative;top: -720.0px;left: 970px" onclick="funGetData(93)">
+	<p id="Temp93" style="display:none">199.928500661</p>
+	<p id="Step93" style="display:none">93</p>
+</div>
+<div class="punto" style="position: relative;top: -730.0px;left: 980px" onclick="funGetData(94)">
+	<p id="Temp94" style="display:none">199.93445894</p>
+	<p id="Step94" style="display:none">94</p>
+</div>
+<div class="punto" style="position: relative;top: -740.0px;left: 990px" onclick="funGetData(95)">
+	<p id="Temp95" style="display:none">199.939920695</p>
+	<p id="Step95" style="display:none">95</p>
+</div>
+<div class="punto" style="position: relative;top: -750.0px;left: 1000px" onclick="funGetData(96)">
+	<p id="Temp96" style="display:none">199.944927303</p>
+	<p id="Step96" style="display:none">96</p>
+</div>
+<div class="punto" style="position: relative;top: -760.0px;left: 1010px" onclick="funGetData(97)">
+	<p id="Temp97" style="display:none">199.949516695</p>
+	<p id="Step97" style="display:none">97</p>
+</div>
+<div class="punto" style="position: relative;top: -770.0px;left: 1020px" onclick="funGetData(98)">
+	<p id="Temp98" style="display:none">199.953723637</p>
+	<p id="Step98" style="display:none">98</p>
+</div>
+<div class="punto" style="position: relative;top: -780.0px;left: 1030px" onclick="funGetData(99)">
+	<p id="Temp99" style="display:none">199.95758</p>
+	<p id="Step99" style="display:none">99</p>
+</div>
+<div class="punto" style="position: relative;top: -790.0px;left: 1040px" onclick="funGetData(100)">
+	<p id="Temp100" style="display:none">199.961115</p>
+	<p id="Step100" style="display:none">100</p>
+</div>
+<div class="punto" style="position: relative;top: -800.0px;left: 1050px" onclick="funGetData(101)">
+	<p id="Temp101" style="display:none">199.964355417</p>
+	<p id="Step101" style="display:none">101</p>
+</div>
+<div class="punto" style="position: relative;top: -810.0px;left: 1060px" onclick="funGetData(102)">
+	<p id="Temp102" style="display:none">199.967325799</p>
+	<p id="Step102" style="display:none">102</p>
+</div>
+<div class="punto" style="position: relative;top: -820.0px;left: 1070px" onclick="funGetData(103)">
+	<p id="Temp103" style="display:none">199.970048649</p>
+	<p id="Step103" style="display:none">103</p>
+</div>
+<div class="punto" style="position: relative;top: -830.0px;left: 1080px" onclick="funGetData(104)">
+	<p id="Temp104" style="display:none">199.972544595</p>
+	<p id="Step104" style="display:none">104</p>
+</div>
+<div class="punto" style="position: relative;top: -840.0px;left: 1090px" onclick="funGetData(105)">
+	<p id="Temp105" style="display:none">199.974832545</p>
+	<p id="Step105" style="display:none">105</p>
+</div>
+<div class="punto" style="position: relative;top: -850.0px;left: 1100px" onclick="funGetData(106)">
+	<p id="Temp106" style="display:none">199.976929833</p>
+	<p id="Step106" style="display:none">106</p>
+</div>
+<div class="punto" style="position: relative;top: -860.0px;left: 1110px" onclick="funGetData(107)">
+	<p id="Temp107" style="display:none">199.978852347</p>
+	<p id="Step107" style="display:none">107</p>
+</div>
+<div class="punto" style="position: relative;top: -870.0px;left: 1120px" onclick="funGetData(108)">
+	<p id="Temp108" style="display:none">199.980614652</p>
+	<p id="Step108" style="display:none">108</p>
+</div>
+<div class="punto" style="position: relative;top: -880.0px;left: 1130px" onclick="funGetData(109)">
+	<p id="Temp109" style="display:none">199.982230097</p>
+	<p id="Step109" style="display:none">109</p>
+</div>
+<div class="punto" style="position: relative;top: -890.0px;left: 1140px" onclick="funGetData(110)">
+	<p id="Temp110" style="display:none">199.983710922</p>
+	<p id="Step110" style="display:none">110</p>
+</div>
+<div class="punto" style="position: relative;top: -900.0px;left: 1150px" onclick="funGetData(111)">
+	<p id="Temp111" style="display:none">199.985068346</p>
+	<p id="Step111" style="display:none">111</p>
+</div>
+<div class="punto" style="position: relative;top: -910.0px;left: 1160px" onclick="funGetData(112)">
+	<p id="Temp112" style="display:none">199.98631265</p>
+	<p id="Step112" style="display:none">112</p>
+</div>
+<div class="punto" style="position: relative;top: -920.0px;left: 1170px" onclick="funGetData(113)">
+	<p id="Temp113" style="display:none">199.987453263</p>
+	<p id="Step113" style="display:none">113</p>
+</div>
+<div class="punto" style="position: relative;top: -930.0px;left: 1180px" onclick="funGetData(114)">
+	<p id="Temp114" style="display:none">199.988498824</p>
+	<p id="Step114" style="display:none">114</p>
+</div>
+<div class="punto" style="position: relative;top: -940.0px;left: 1190px" onclick="funGetData(115)">
+	<p id="Temp115" style="display:none">199.989457255</p>
+	<p id="Step115" style="display:none">115</p>
+</div>
+<div class="punto" style="position: relative;top: -950.0px;left: 1200px" onclick="funGetData(116)">
+	<p id="Temp116" style="display:none">199.990335817</p>
+	<p id="Step116" style="display:none">116</p>
+</div>
+<div class="punto" style="position: relative;top: -960.0px;left: 1210px" onclick="funGetData(117)">
+	<p id="Temp117" style="display:none">199.991141166</p>
+	<p id="Step117" style="display:none">117</p>
+</div>
+<div class="punto" style="position: relative;top: -970.0px;left: 1220px" onclick="funGetData(118)">
+	<p id="Temp118" style="display:none">199.991879402</p>
+	<p id="Step118" style="display:none">118</p>
+</div>
+<div class="punto" style="position: relative;top: -980.0px;left: 1230px" onclick="funGetData(119)">
+	<p id="Temp119" style="display:none">199.992556119</p>
+	<p id="Step119" style="display:none">119</p>
+</div>
+</body>
+
+</html>
